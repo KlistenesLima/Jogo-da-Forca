@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div id="dvmenu" class="dvdisplay">
+        <button onclick="inicia()">Nova palavra</button><!--Botão que chama a função 'inicia()'-->
+    </div>
+    <div id="dvplavra" class="dvdisplay">
+       <input type="text" id="letra0" class="letra" maxlength="1"> <!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra1" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra2" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra3" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra4" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra5" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra6" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra7" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra8" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra9" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra10" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra11" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra12" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra13" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra14" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra15" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra16" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra17" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra18" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+        <input type="text" id="letra19" class="letra" maxlength="1"><!-- Input de texto de tamanho máximo 1, com classe e id atribuídos -->
+    </div>
+    <div id="dvjogador" class="dvdisplay"><!--Div dos controles do jogador-->
+        <div id="controlesJogador"><!--Div dos controles do jogador-->
+            <input type="text" id="letraJ" class="letraJ" maxlength="1"><!--Input de texto que o jogador vai digitar a letra-->
+            <button onclick="jogar()">jogar</button><!--Botão o qual o jogador vai iniciar a ação de procurar a letra-->
+            <button onclick="dica()">Dica</button><!--Botão para exibir a dica-->
+            <div id="dvmsg"></div><br><!--Mostrar a mensagem 'Ganhou' ou 'Perdeu'-->
+            <div id="dvletrasdigitadas">Letras Digitadas:</div><!--div que irá exibir as letras já digitadas-->
+        </div>
+        <div id="dvForca"><!--Div para as imagens sequenciais da forca-->
+            <img id="forca0" class="forcaS" src="../imgs/forca0.png"><!--Imagem da forca0 -->
+            <img id="forca1" class="forcaS" src="../imgs/forca1.png"><!--Imagem da forca1 -->
+            <img id="forca2" class="forcaS" src="../imgs/forca2.png"><!--Imagem da forca2 -->
+            <img id="forca3" class="forcaS" src="../imgs/forca3.png"><!--Imagem da forca3 -->
+            <img id="forca4" class="forcaS" src="../imgs/forca4.png"><!--Imagem da forca4 -->
+            <img id="forca5" class="forcaS" src="../imgs/forca5.png"><!--Imagem da forca5 -->
+            <img id="forca6" class="forcaS" src="../imgs/forca6.png"><!--Imagem da forca6 -->
+        </div> 
+    </div>
+    <script src="script.js"></script><!--Url para ligar a página do Javascript ao HTML-->
+</body>
+</html>
